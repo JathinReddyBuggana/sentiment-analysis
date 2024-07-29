@@ -15,8 +15,8 @@ st.write('This app performs sentiment analysis on mental health statements.')
 
 
 try:
-    model = pickle.load(open(r"C:\Users\jathi\mh.pkl",'rb'))
-    bow = pickle.load(open(r"C:\Users\jathi\bow1.pkl",'rb'))
+    model = pickle.load(open(r"mh.pkl"))
+    bow = pickle.load(open(r"bow1.pkl"))
 except Exception as e:
     st.error(f"An error occurred: {e}")
 
